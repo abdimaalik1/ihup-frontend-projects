@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #eee;
+        }
+        header,footer {
+            background-color: hsl(200, 100%, 15%);
+            text-align: center; 
+            color: #fff;
+            /* padding: 1rem 0; */
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .form-cont {
+            width: 100%;
+            /* background-color: #eee; */
+            box-shadow: 0 0 5px 0 #777;
+        }
+        form .inp {
+            width: 100%;
+            border: 1px solid hsl(200, 100%, 30%);
+            border-radius: .4em;
+            padding: .7rem 0;
+            outline: none;
+        }
+        form .inp:focus {
+            border-color: 1px solid hsl(200, 100%, 50%);
+            box-shadow: 0 0 5px 0 hsl(200, 100%, 50%);
+        }
+        .inp::placeholder {
+            padding-left: .5rem;
+        }
+        form label {
+            margin: .3rem;
+            /* margin-top: 1rem; */
+            display: block;            
+        }
+        form textarea {
+            height: 50px;
+            resize: vertical;
+        }
+
+        .lab-con {
+            margin: 1rem .5rem;
+        }
+        form button {
+            padding: .5rem 0;
+            text-align: center;
+            border-radius: .4em;
+            width: 100%;
+            background-color: hsl(200, 80%, 15%);
+            border: 1px solid #aaa;
+            margin: 1rem 0 ;
+            color: #fff;
+        }
+        form button:hover,
+        form button:focus {
+            box-shadow: 0 0 15px 0 #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h2>Contact Me</h2></header>
+        <form action="">
+           <div class="form-cont">
+            <div class="lab-con">
+                <label for="">Fullname</label> 
+                <input class="inp" type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="lab-con">
+                <label for="">Email</label>
+                <input class="inp" type="email" name="" id=""placeholder="Enter Your Email">
+            </div>
+
+            <div class="lab-con">
+                <label for="">Massege</label>
+                <textarea class="inp" name="" id="" placeholder="Write here"></textarea>
+            </div>
+
+           <div class="lab-con">
+
+               <button>send</button>
+           </div>
+           
+           
+ 
+           </div>         
+        </form>
+        <footer>
+            <p>Copyright © CITYCOT University 2024 | Developed by Abdimaalik Xamari</p>
+        </footer>
+    </div>
+</body>
+</html>
