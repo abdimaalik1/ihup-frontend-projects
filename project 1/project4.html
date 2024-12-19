@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <style>
+        :root {
+            /* page colors */
+            --page-color: hsl(100,100%,30%);
+            --black-color: #222;
+            --white-color: #FFF;
+            --grey-color: #777;
+            --dark-color: #000;
+            --body-color: hsl(200, 100%, 98%);
+            /* button hsl colors */
+            --bakground-hue: 100;
+            --bakground-saturation: 100%;
+            --bakground-lightness: 35%;
+            --intial-bakground-lightness: var(--bakground-lightness);
+            --border-lightness: calc(var(--intial-bakground-lightness) - 10%);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: arial;
+            list-style: none;
+        }
+        body {
+           background-color: var(--body-color);
+        }
+        p,label,td {
+            color: var(--black-color);
+        }
+        header,footer {
+            background-color: var(--page-color);
+            text-align: center;
+            padding: 1rem;
+            color: var(--white-color);
+        }
+
+        nav {
+            /* margin: 1rem 0; */
+            background-color: var(--dark-color);
+            padding: 1rem 0;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 0 1rem;
+        }
+        nav ul li a {
+            color: var(--white-color);
+        }
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: var(--page-color);
+            transition: all .3s;
+        }
+
+        main {
+            width: 80vw;
+            margin: 1rem auto;
+        }
+        .section {
+            margin-top: 1rem;
+        }
+        .section1,.section3 h3,.section3 p {
+            text-align: center;
+        }
+        .section2 h3 {
+            margin: .5rem 0;
+        }
+        .section2 table,th,td {
+            border: 1px solid var(--black-color);
+            border-collapse: collapse;
+        }
+        .section2 table {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .section2 table tr th {
+            background-color: var(--page-color);
+            color: var(--white-color);
+            padding: .5rem ;
+            /* border: 1px solid #000; */
+        }
+        .section2 table tr td {
+            padding: .5rem;
+        }
+        .section3 .card-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .section3 .card-container .card {
+            width: 32%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--white-color);
+            border-radius: .3em;
+            box-shadow: -1px 1px 5px 0 var(--grey-color);
+        }
+        .section3 .card-container .card img {
+            width: 50px;
+
+        }
+        .section3 .card-container .card h4 {
+            margin: .5rem 0;
+        }
+        @media (max-width:780px) and (min-width:675px){
+            main {
+                width: 96vw;
+            }
+        }
+        @media (max-width:675px) {
+            .section3 .card-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .section3 .card-container .card {
+                width: 100%;
+            }
+        }
+        
+        .section4 form .lab-inp-cont {
+            margin-top: 1rem;
+        }
+        .section4 form input,
+        .section4 form textarea {
+            width: 100%;
+            border: 1px solid var(--page-color);
+            border-radius: .3em;
+            outline: none;
+            padding: .8rem .5rem;
+            /* margin-top: .3rem; */
+        }
+        .section4 form input:focus,
+        .section4 form textarea:focus {
+            border-color: hsl(100,100%,50%);
+            box-shadow: 0 0 5px 0 hsl(100,100%,50%);
+        } 
+        .section4 form button {
+
+            background-color: hsl(
+            var(--bakground-hue),
+            var(--bakground-saturation),
+            var(--bakground-lightness)
+                            );
+            border: 1px solid hsl(
+                        var(--bakground-hue),
+                        var(--bakground-saturation),
+                        var(--border-lightness)
+                            );
+            width: 100%;
+            border-radius: .3em;
+            cursor: pointer;
+            font-size: inherit;
+            padding: .8rem;
+            color: var(--white-color);
+            margin-top: .5rem;
+        }
+        .section4 form button:hover,
+        .section4 form button:focus {
+            --bakground-lightness: calc(var(--intial-bakground-lightness) - 20%);
+            box-shadow: 0 0 5px 0 hsl(
+                        var(--bakground-hue),
+                        var(--bakground-saturation),
+                        var(--border-lightness)
+                            );
+        }
+
+        footer {
+            background-color: var(--dark-color);
+        }
+        footer p {
+            color: var(--white-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <h1>HTML Learning Project</h1>          
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">testmonls</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="section section1">
+                <h3>about this project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic et quis impedit commodi tenetur perferendis!</p>
+            </div>
+
+            <div class="section section2">
+                <h3>Project list</h3>
+                <table>
+                    <tr>
+                        <th>Project name</th>
+                        <th>description</th>
+                        <th>status</th>
+                    </tr>
+
+                    <tr>
+                        <td>Portfilio website</td>
+                        <td>Show your Projects and skills</td>
+                        <td>comploted</td>
+                    </tr>
+
+                    <tr>
+                        <td>Personal blog</td>
+                        <td>a simple blogging plattform</td>
+                        <td>in progress</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section section3">
+                <h3>testimonals</h3>
+                <p><b>challenge:</b>recreate this layout of testmonals using HTML and CSS</p>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="img/somtic.jpg" alt="">
+                        <h4>review one</h4>
+                        <p>"this project taugh me a lot about HTML and CSS. i feel much more confident now!"</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/somtic.jpg" alt="">
+                        <h4>review two</h4>
+                        <p>"this project taugh me a lot about HTML and CSS. i feel much more confident now!"</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/somtic.jpg" alt="">
+                        <h4>review three</h4>
+                        <p>"this project taugh me a lot about HTML and CSS. i feel much more confident now!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section4">
+                <h3>contact me</h3>
+                <form action="">
+                    <div class="lab-inp-cont">
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="lab-inp-cont">
+                        
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Enter your E-mail">
+                    </div>
+                    <div class="lab-inp-cont">
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Enter Additional Information"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright © CITYCOT University 2024 | Developed by Abdimaalik Xamari </p>
+        </footer>
+    </div>
+</body>
+</html>

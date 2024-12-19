@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: black;
+            font-family: arial;
+        }
+        body {
+            
+        }
+        .container {
+
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem;
+        }
+        img {
+            width: 40px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        nav {
+
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            padding: .5rem;
+            text-transform: capitalize;
+        }
+        main {
+            width: 80vw;
+            margin: 1rem auto;
+        }
+        .section1 {
+            text-align: center;
+            padding: 1rem;
+        }
+        .section1 h1 {
+            font-size: 2.5rem;
+        }
+        .section1 p {
+            margin-top: .5rem;
+        }
+        .section2 {
+            display: flex;
+            border: 2px solid black;
+        }
+        .item1 h3 {
+            margin: .5rem .5rem 0;
+        }
+        .item1 p {
+            border-bottom: 2px solid black;
+            padding: 1rem;
+        }
+        .item1 p:last-child {
+            border-bottom: 0;
+        }
+        .item2 {
+            border-left: 2px solid black;
+        }
+        .item2 h3 {
+            margin: .5rem .5rem 0;
+        }
+        .item2 a{
+            color: blue;
+        }
+        .item2 p,
+        .item2 a {
+            padding: .3rem;
+        }
+        .item2 .article1 {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid black;
+        }
+        .item2 .article2 {
+            padding-top: 1rem;
+        }
+        .item3 {
+            border-left: 2px solid black;
+            padding-left: .5rem;
+        }
+        .item3 h3 {
+            margin-bottom: .5rem;
+        }
+        .item3 h4 {
+            margin: .5rem 0 ;
+        }
+        .item3 ul li {
+            margin-left: 1rem;
+        }
+        .teachers {
+            padding: 1rem;
+        }
+        .teachers .card-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .teachers .card-cont .card {
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 30%;
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+        .teachers .card-cont .card .muted {
+            color: gray;
+            margin-top: .5rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/somtic.jpg" alt="">
+                <h3>Abdimaalik</h3>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li>/</li>
+                    <li><a href="">projects</a></li>
+                    <li>/</li>
+                    <li><a href="">articles</a></li>
+                    <li>/</li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        
+        <section class="section1">
+            <h1>Frontend Devoloper</h1>
+            <p>Html only whith proper layout, no styling</p>
+        </section>
+
+        <section class="section2">
+            <div class="item1">
+            <h3>projects</h3>
+                <p>Html only portilio</p>
+                <p>Calculator</p>
+                <p>quiz app</p>
+                <p>count down timer</p>
+                <p>prodect upcaoming page</p>
+            </div>
+            <div class="item2">
+                <div class="article1">
+                    <h3>work experence</h3>
+                <p>roadmap.sh</p>
+                <p>solcved all frontend projects</p>
+                <a href="">vist my profile</a>
+                </div>
+              <div class="article2">
+                <h3>open source work</h3>
+                <p>contrubeted to 50 opensource projects. made my own projects whith 200 Github stars.</p>
+                <a href="">Visit my Github profile</a>
+              </div>
+            </div>
+            <div class="item3">
+                <h3>Education</h3>
+                <p>Graduated with 3.76 out of 4 CGPA won acme Hackathon Oraganized 30 sessions.</p>
+                <h4>Courses i took:</h4>
+                <ul>
+                    <li>object oriented proggramming</li>
+                    <li>Data sturecture and algorithm</li>
+                    <li>Web engineering</li>
+                    <li>Artificial intelegence</li>
+                    <li>Human computer interation</li>
+                    <li>Computer graphics</li>
+                    <li>Database manegment system</li>
+                    <li>Database manegment system</li>
+                    <li>Database manegment system</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="teachers">
+            <h2>Review Teachers</h2>
+            <div class="card-cont">
+                <div class="card">
+                    <p>john doe was a briallint student; always stood out whith his assignments</p>
+                    <p class="muted">
+                        jone doe <br>
+                        assistent professor   
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>john doe was a briallint student; always stood out whith his assignments</p>
+                    <p class="muted">
+                        jone doe <br>
+                        assistent professor   
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p>john doe was a briallint student; always stood out whith his assignments</p>
+                    <p class="muted">
+                        jone doe <br>
+                        assistent professor   
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © CITYCOT University 2024 | Developed by Abdimaalik Xamari </p>
+    </footer>
+    </div>
+</body>
+</html>
