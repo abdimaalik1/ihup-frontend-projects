@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     
+         
+
+            <!-- Doctor Registration Form -->
+
+            
+            <div class="card m-3">
+                <div class="card-header">
+                    <h3>Add New Doctor</h3>
+                </div>
+                <div class="card-body">
+                    <!-- Row 1 -->
+                    <div class="row mb-2">
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Full Name</label>
+                            <div class="input-group ">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-user" style="color: blue;"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Fullname">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-envelope" style="color: blue;"></i>  
+                                </span>
+                                <input type="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Title</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-box" style="color: blue;"></i>   
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Title">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row mb-2">
+                        <div class="col-sm-4 ">
+                            <label for="" class="form-label">Department</label>
+                            <div class="input-group ">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-building" style="color: blue;"></i>   
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Departement">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Expirence</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-box" style="color: blue;"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Expirence In Years">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Contact Phone</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-phone" style="color: blue;"></i>
+                                </span>
+                                <input type="number" class="form-control" placeholder="Enter Contact Number">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="row mb-2">
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Degree</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-graduation-cap" style="color: blue;"></i> 
+                                </span>
+                                <input type="text" class="form-control" placeholder="Enter Degree">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Fee</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-dollar-sign" style="color: blue;"></i>
+                                </span>
+                                <input type="number" class="form-control" placeholder="Enter Fee">
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="" class="form-label">Profile Photo</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-camera-retro" style="color: blue;"></i>
+                                </span>
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row 4 -->
+                     <div class="row mb-2">
+                        <div class="col-sm-3">
+                            <button class="btn w-100 btn-success">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                Save
+                            </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn w-100 btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete
+                            </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn w-100 btn-warning">
+                                <i class="fa-solid fa-pen"></i>
+                                Update
+                            </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn w-100 btn-info">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Search
+                            </button>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+
+            <div class="card m-3">
+                <div class="card-header">
+                    <h3>List of Doctors</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                           <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Title</th>
+                            <th>Departement</th>
+                            <th>Expirence</th>
+                            <th>Contact</th>
+                            <th>Fee</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Ahmed@gmail.com</td>
+                            <td>Cardioligist</td>
+                            <td>Cardiolgy</td>
+                            <td>10 Years</td>
+                            <td>9879878978</td>
+                            <td>$100</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         
+    
+</body>
+
+</html>
